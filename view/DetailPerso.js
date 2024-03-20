@@ -1,9 +1,9 @@
-export default class Home{
+export default class DetailPerso{
     async render(){
         return /* html */`
         <section class="section">
             <h1>Detail</h1>
-            <p><a href="/page.html#/">Home</a> - <a href="/page.html#/e">Error404</a></p>
+            <p><a href="/#/">Home</a> - <a href="/#/personnages">Personnages</a></p>
         </section>
         `
     }
