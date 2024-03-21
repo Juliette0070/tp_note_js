@@ -17,7 +17,11 @@ const router = async () => {
     let parsedURL = (request.resource ? `/${request.resource}` : '/') + (request.id ? '/:id' : '') + (request.verb ? `/${request.verb}` : '');
     let page = routes[parsedURL] ? new routes[parsedURL] : new Error404;
     console.log(page);
-    content.innerHTML = await page.render();
+    if (parsedURL === '/personnages/:id') {
+        content.innerHTML = await page.render(request.id);
+    } else {
+        content.innerHTML = await page.render();
+    }
 }
 
 window.addEventListener('hashchange', router);

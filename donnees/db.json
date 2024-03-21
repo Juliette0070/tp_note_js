@@ -1,13 +1,350 @@
 {
-  "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
+  "personnages": [
+    {
+      "id": 1,
+      "nom": "Harry Potter",
+      "age": 17,
+      "maison": "Gryffondor",
+      "baguette_magique_id": 1,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 2,
+      "nom": "Hermione Granger",
+      "age": 17,
+      "maison": "Gryffondor",
+      "baguette_magique_id": 2,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 3,
+      "nom": "Ron Weasley",
+      "age": 17,
+      "maison": "Gryffondor",
+      "baguette_magique_id": 3,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 4,
+      "nom": "Albus Dumbledore",
+      "age": 115,
+      "poste": "Directeur de Poudlard",
+      "maison": "Gryffondor",
+      "baguette_magique_id": 4,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 5,
+      "nom": "Severus Rogue",
+      "age": 38,
+      "poste": "Professeur de Potions à Poudlard",
+      "maison": "Serpentard",
+      "baguette_magique_id": 5,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 6,
+      "nom": "Sirius Black",
+      "age": 36,
+      "maison": "Gryffondor",
+      "baguette_magique_id": 6,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 7,
+      "nom": "Remus Lupin",
+      "age": 38,
+      "maison": "Gryffondor",
+      "baguette_magique_id": 7,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 8,
+      "nom": "Minerva McGonagall",
+      "age": 70,
+      "poste": "Professeur de Métamorphose à Poudlard",
+      "maison": "Gryffondor",
+      "baguette_magique_id": 8,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 9,
+      "nom": "Bellatrix Lestrange",
+      "age": 47,
+      "maison": "Serpentard",
+      "baguette_magique_id": 9,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 10,
+      "nom": "Nymphadora Tonks",
+      "age": 23,
+      "maison": "Hufflepuff",
+      "baguette_magique_id": 10,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 11,
+      "nom": "Draco Malfoy",
+      "age": 17,
+      "maison": "Serpentard",
+      "baguette_magique_id": 11,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 12,
+      "nom": "Neville Londubat",
+      "age": 17,
+      "maison": "Gryffondor",
+      "baguette_magique_id": 12,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 13,
+      "nom": "Ginny Weasley",
+      "age": 16,
+      "maison": "Gryffondor",
+      "baguette_magique_id": 13,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 14,
+      "nom": "Rubeus Hagrid",
+      "age": 63,
+      "poste": "Gardien des clés et des lieux à Poudlard",
+      "maison": "Gryffondor",
+      "baguette_magique_id": 14,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 15,
+      "nom": "Fleur Delacour",
+      "age": 18,
+      "maison": "Beauxbâtons",
+      "baguette_magique_id": 15,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 16,
+      "nom": "Viktor Krum",
+      "age": 18,
+      "maison": "Durmstrang",
+      "baguette_magique_id": 16,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 17,
+      "nom": "Cédric Diggory",
+      "age": 17,
+      "maison": "Hufflepuff",
+      "baguette_magique_id": 17,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 18,
+      "nom": "Luna Lovegood",
+      "age": 17,
+      "maison": "Ravenclaw",
+      "baguette_magique_id": 18,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 19,
+      "nom": "Fred Weasley",
+      "age": 17,
+      "maison": "Gryffondor",
+      "baguette_magique_id": 19,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    },
+    {
+      "id": 20,
+      "nom": "George Weasley",
+      "age": 17,
+      "maison": "Gryffondor",
+      "baguette_magique_id": 20,
+      "animal": null,
+      "objets": [],
+      "sorts": [],
+      "image": ""
+    }
   ],
-  "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "baguettes": [
+    {
+      "id": 1,
+      "bois": "Houx",
+      "coeur": "Plume de phénix",
+      "longueur": "28 cm"
+    },
+    {
+      "id": 2,
+      "bois": "Vigne",
+      "coeur": "Crin de licorne",
+      "longueur": "25,5 cm"
+    },
+    {
+      "id": 3,
+      "bois": "Sapin",
+      "coeur": "Crin de licorne",
+      "longueur": "30,5 cm"
+    },
+    {
+      "id": 4,
+      "bois": "Sureau",
+      "coeur": "Plume de phénix",
+      "longueur": "38,5 cm"
+    },
+    {
+      "id": 5,
+      "bois": "If",
+      "coeur": "Crin de licorne",
+      "longueur": "30,5 cm"
+    },
+    {
+      "id": 6,
+      "bois": "Chêne",
+      "coeur": "Crin de licorne",
+      "longueur": "35 cm"
+    },
+    {
+      "id": 7,
+      "bois": "Acajou",
+      "coeur": "Crin de sombral",
+      "longueur": "31,5 cm"
+    },
+    {
+      "id": 8,
+      "bois": "Ébène",
+      "coeur": "Plume de griffon",
+      "longueur": "32 cm"
+    },
+    {
+      "id": 9,
+      "bois": "Noisetier",
+      "coeur": "Crin de licorne",
+      "longueur": "29,8 cm"
+    },
+    {
+      "id": 10,
+      "bois": "Cerisier",
+      "coeur": "Plume de phénix",
+      "longueur": "28,5 cm"
+    },
+    {
+      "id": 11,
+      "bois": "Orme",
+      "coeur": "Crin de licorne",
+      "longueur": "30 cm"
+    },
+    {
+      "id": 12,
+      "bois": "Cyprès",
+      "coeur": "Plume de phénix",
+      "longueur": "27,5 cm"
+    },
+    {
+      "id": 13,
+      "bois": "Acacia",
+      "coeur": "Crin de licorne",
+      "longueur": "30 cm"
+    },
+    {
+      "id": 14,
+      "bois": "Châtaignier",
+      "coeur": "Crin de licorne",
+      "longueur": "29,3 cm"
+    },
+    {
+      "id": 15,
+      "bois": "Poirier",
+      "coeur": "Plume de phénix",
+      "longueur": "28,8 cm"
+    },
+    {
+      "id": 16,
+      "bois": "Saule",
+      "coeur": "Crin de licorne",
+      "longueur": "29,7 cm"
+    },
+    {
+      "id": 17,
+      "bois": "Hêtre",
+      "coeur": "Plume de phénix",
+      "longueur": "28,2 cm"
+    },
+    {
+      "id": 18,
+      "bois": "Pin",
+      "coeur": "Crin de licorne",
+      "longueur": "30,2 cm"
+    },
+    {
+      "id": 19,
+      "bois": "Frêne",
+      "coeur": "Plume de phénix",
+      "longueur": "28,3 cm"
+    },
+    {
+      "id": 20,
+      "bois": "Bouleau",
+      "coeur": "Crin de licorne",
+      "longueur": "30,1 cm"
+    }
+  ]
 }
