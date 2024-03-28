@@ -6,9 +6,9 @@
       "age": 17,
       "maison": "Gryffondor",
       "baguette_magique_id": 1,
-      "animal_id": null,
-      "objets": [],
-      "sorts": [],
+      "animal_id": 1,
+      "objets": [1, 4, 5],
+      "sorts": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -17,9 +17,9 @@
       "age": 17,
       "maison": "Gryffondor",
       "baguette_magique_id": 2,
-      "animal_id": null,
-      "objets": [],
-      "sorts": [],
+      "animal_id": 4,
+      "objets": [2, 5],
+      "sorts": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -28,9 +28,9 @@
       "age": 17,
       "maison": "Gryffondor",
       "baguette_magique_id": 3,
-      "animal_id": null,
+      "animal_id": 2,
       "objets": [],
-      "sorts": [],
+      "sorts": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -40,9 +40,9 @@
       "poste": "Directeur de Poudlard",
       "maison": "Gryffondor",
       "baguette_magique_id": 4,
-      "animal_id": null,
+      "animal_id": 5,
       "objets": [],
-      "sorts": [],
+      "sorts": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -54,7 +54,7 @@
       "baguette_magique_id": 5,
       "animal_id": null,
       "objets": [],
-      "sorts": [],
+      "sorts": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -65,7 +65,7 @@
       "baguette_magique_id": 6,
       "animal_id": null,
       "objets": [],
-      "sorts": [],
+      "sorts": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -76,7 +76,7 @@
       "baguette_magique_id": 7,
       "animal_id": null,
       "objets": [],
-      "sorts": [],
+      "sorts": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -88,7 +88,7 @@
       "baguette_magique_id": 8,
       "animal_id": null,
       "objets": [],
-      "sorts": [],
+      "sorts": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -99,7 +99,7 @@
       "baguette_magique_id": 9,
       "animal_id": null,
       "objets": [],
-      "sorts": [],
+      "sorts": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -110,7 +110,7 @@
       "baguette_magique_id": 10,
       "animal_id": null,
       "objets": [],
-      "sorts": [],
+      "sorts": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -121,7 +121,7 @@
       "baguette_magique_id": 11,
       "animal_id": null,
       "objets": [],
-      "sorts": [],
+      "sorts": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -132,7 +132,7 @@
       "baguette_magique_id": 12,
       "animal_id": null,
       "objets": [],
-      "sorts": [],
+      "sorts": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -143,7 +143,7 @@
       "baguette_magique_id": 13,
       "animal_id": null,
       "objets": [],
-      "sorts": [],
+      "sorts": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -153,7 +153,7 @@
       "poste": "Gardien des clés et des lieux à Poudlard",
       "maison": "Gryffondor",
       "baguette_magique_id": 14,
-      "animal_id": null,
+      "animal_id": 3,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -188,7 +188,7 @@
       "baguette_magique_id": 17,
       "animal_id": null,
       "objets": [],
-      "sorts": [],
+      "sorts": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -199,7 +199,7 @@
       "baguette_magique_id": 18,
       "animal_id": null,
       "objets": [],
-      "sorts": [],
+      "sorts": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -210,7 +210,7 @@
       "baguette_magique_id": 19,
       "animal_id": null,
       "objets": [],
-      "sorts": [],
+      "sorts": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -221,7 +221,7 @@
       "baguette_magique_id": 20,
       "animal_id": null,
       "objets": [],
-      "sorts": [],
+      "sorts": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     }
   ],
@@ -345,6 +345,102 @@
       "bois": "Bouleau",
       "coeur": "Crin de licorne",
       "longueur": 30.1
+    }
+  ],
+  "animaux": [
+    {
+      "id": 1,
+      "nom": "Hedwige",
+      "espece": "Chouette",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
+    },
+    {
+      "id": 2,
+      "nom": "Croûtard",
+      "espece": "Rat",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "nom": "Buck",
+      "espece": "Cerf",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
+    },
+    {
+      "id": 4,
+      "nom": "Pattenrond",
+      "espece": "Chat",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
+    },
+    {
+      "id": 5,
+      "nom": "Fumseck",
+      "espece": "Phénix",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
+    }
+  ],
+  "objets": [
+    {
+      "id": 1,
+      "nom": "Éclair de Feu",
+      "description": "Balai volant",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
+    },
+    {
+      "id": 2,
+      "nom": "Miroir à Double Sens",
+      "description": "Permet de communiquer avec un autre miroir identique",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "nom": "Retourneur de Temps",
+      "description": "Permet de remonter le temps",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
+    },
+    {
+      "id": 4,
+      "nom": "Cape d'Invisibilité",
+      "description": "Rend invisible celui qui la porte",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
+    },
+    {
+      "id": 5,
+      "nom": "Carte du Maraudeur",
+      "description": "Carte magique indiquant la position de chaque personne à Poudlard",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
+    }
+  ],
+  "sorts": [
+    {
+      "id": 1,
+      "nom": "Expelliarmus",
+      "description": "Sortilège de désarmement",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
+    },
+    {
+      "id": 2,
+      "nom": "Lumos",
+      "description": "Sortilège d'illumination",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "nom": "Nox",
+      "description": "Éteint la lumière d'un sortilège Lumos",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
+    },
+    {
+      "id": 4,
+      "nom": "Petrificus Totalus",
+      "description": "Sortilège de pétrification",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
+    },
+    {
+      "id": 5,
+      "nom": "Rictusempra",
+      "description": "Sortilège chatouilleur",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     }
   ]
 }
