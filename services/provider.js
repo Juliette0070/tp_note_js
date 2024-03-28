@@ -1,4 +1,4 @@
-import { PERSONNAGES, BAGUETTES } from '../config.js';
+import { PERSONNAGES, BAGUETTES, ANIMAUX, OBJETS, SORTS } from '../config.js';
 
 export default class Provider {
     static fetchPersonnages = async () => {
@@ -19,10 +19,24 @@ export default class Provider {
                 const jsonBaguette = await responseBaguette.json();
                 json.baguette = jsonBaguette;
             }
-            // if (json.animal && json.animal != null) {
-            //     const responseAnimal = await fetch(`${ANIMAUX}/${json.animal_id}`);
-            //     const jsonAnimal = await responseAnimal.json();
-            //     json.animal = jsonAnimal;
+            if (json.animal && json.animal != null) {
+                const responseAnimal = await fetch(`${ANIMAUX}/${json.animal_id}`);
+                const jsonAnimal = await responseAnimal.json();
+                json.animal = jsonAnimal;
+            }
+            // if (json.objet && json.objet.length > 0) {
+            //     json.objet.map(async (objet) => {
+            //         const responseObjet = await fetch(`${OBJETS}/${objet.id}`);
+            //         const jsonObjet = await responseObjet.json();
+            //         objet = jsonObjet;
+            //     });
+            // }
+            // if (json.sort && json.sort.length > 0) {
+                // json.sort.map(async (sort) => {
+                    // const responseSort = await fetch(`${SORTS}/${sort.id}`);
+                    // const jsonSort = await responseSort.json();
+                    // sort = jsonSort;
+                // });
             // }
             return json;
         } catch (error) {
