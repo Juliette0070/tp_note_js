@@ -8,12 +8,12 @@ export default class DetailPerso{
         myList.appendChild(document.createElement("li")).textContent = perso.nom;
         myList.appendChild(document.createElement("li")).textContent = perso.maison;
         myList.appendChild(document.createElement("li")).textContent = perso.age + " ans";
-        if (perso.baguette_maique_id && perso.baguette_maique_id != null) {
+        if (perso.baguette_magique_id && perso.baguette_magique_id != null) {
             myList.appendChild(document.createElement("li")).textContent = "Baguette:";
             let baguette = document.createElement("ul");
             baguette.appendChild(document.createElement("li")).textContent = perso.baguette.bois;
-            baguette.appendChild(document.createElement("li")).textContent = perso.baguette.taille + " cm";
-            baguette.appendChild(document.createElement("li")).textContent = perso.baguette.noyau;
+            baguette.appendChild(document.createElement("li")).textContent = perso.baguette.coeur;
+            baguette.appendChild(document.createElement("li")).textContent = perso.baguette.longueur + " cm";
             myList.appendChild(baguette);
         }
         if (perso.animal && perso.animal != null) {
@@ -29,10 +29,17 @@ export default class DetailPerso{
             perso.sorts.forEach(sort => {
                 sort.appendChild(document.createElement("li")).textContent = sort.nom;
             });
-            if (sort.length == 0) {
+            if (perso.sorts.length == 0) {
                 sort.appendChild(document.createElement("li")).textContent = "Aucun sort";
             }
             myList.appendChild(sort);
+        }
+        if (perso.animal_id && perso.animal_id != null) {
+            myList.appendChild(document.createElement("li")).textContent = "Animal:";
+            let animal = document.createElement("ul");
+            animal.appendChild(document.createElement("li")).textContent = perso.animal.nom;
+            animal.appendChild(document.createElement("li")).textContent = perso.animal.espece;
+            myList.appendChild(animal);
         }
         if (perso.objets) {
             myList.appendChild(document.createElement("li")).textContent = "Objets:";
@@ -40,7 +47,7 @@ export default class DetailPerso{
             perso.objets.forEach(objet => {
                 objets.appendChild(document.createElement("li")).textContent = objet.nom;
             });
-            if (objets.length == 0) {
+            if (perso.objets.length == 0) {
                 objets.appendChild(document.createElement("li")).textContent = "Aucun objet";
             }
             myList.appendChild(objets);

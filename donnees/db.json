@@ -6,7 +6,7 @@
       "age": 17,
       "maison": "Gryffondor",
       "baguette_magique_id": 1,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -17,7 +17,7 @@
       "age": 17,
       "maison": "Gryffondor",
       "baguette_magique_id": 2,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -28,7 +28,7 @@
       "age": 17,
       "maison": "Gryffondor",
       "baguette_magique_id": 3,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -40,7 +40,7 @@
       "poste": "Directeur de Poudlard",
       "maison": "Gryffondor",
       "baguette_magique_id": 4,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -52,7 +52,7 @@
       "poste": "Professeur de Potions à Poudlard",
       "maison": "Serpentard",
       "baguette_magique_id": 5,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -63,7 +63,7 @@
       "age": 36,
       "maison": "Gryffondor",
       "baguette_magique_id": 6,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -74,7 +74,7 @@
       "age": 38,
       "maison": "Gryffondor",
       "baguette_magique_id": 7,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -86,7 +86,7 @@
       "poste": "Professeur de Métamorphose à Poudlard",
       "maison": "Gryffondor",
       "baguette_magique_id": 8,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -97,7 +97,7 @@
       "age": 47,
       "maison": "Serpentard",
       "baguette_magique_id": 9,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -108,7 +108,7 @@
       "age": 23,
       "maison": "Hufflepuff",
       "baguette_magique_id": 10,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -119,7 +119,7 @@
       "age": 17,
       "maison": "Serpentard",
       "baguette_magique_id": 11,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -130,7 +130,7 @@
       "age": 17,
       "maison": "Gryffondor",
       "baguette_magique_id": 12,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -141,7 +141,7 @@
       "age": 16,
       "maison": "Gryffondor",
       "baguette_magique_id": 13,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -153,7 +153,7 @@
       "poste": "Gardien des clés et des lieux à Poudlard",
       "maison": "Gryffondor",
       "baguette_magique_id": 14,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -164,7 +164,7 @@
       "age": 18,
       "maison": "Beauxbâtons",
       "baguette_magique_id": 15,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -175,7 +175,7 @@
       "age": 18,
       "maison": "Durmstrang",
       "baguette_magique_id": 16,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -186,7 +186,7 @@
       "age": 17,
       "maison": "Hufflepuff",
       "baguette_magique_id": 17,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -197,7 +197,7 @@
       "age": 17,
       "maison": "Ravenclaw",
       "baguette_magique_id": 18,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -208,7 +208,7 @@
       "age": 17,
       "maison": "Gryffondor",
       "baguette_magique_id": 19,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -219,7 +219,7 @@
       "age": 17,
       "maison": "Gryffondor",
       "baguette_magique_id": 20,
-      "animal": null,
+      "animal_id": null,
       "objets": [],
       "sorts": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
@@ -230,121 +230,121 @@
       "id": 1,
       "bois": "Houx",
       "coeur": "Plume de phénix",
-      "longueur": "28 cm"
+      "longueur": 28
     },
     {
       "id": 2,
       "bois": "Vigne",
       "coeur": "Crin de licorne",
-      "longueur": "25,5 cm"
+      "longueur": 25.5
     },
     {
       "id": 3,
       "bois": "Sapin",
       "coeur": "Crin de licorne",
-      "longueur": "30,5 cm"
+      "longueur": 30.5
     },
     {
       "id": 4,
       "bois": "Sureau",
       "coeur": "Plume de phénix",
-      "longueur": "38,5 cm"
+      "longueur": 38.5
     },
     {
       "id": 5,
       "bois": "If",
       "coeur": "Crin de licorne",
-      "longueur": "30,5 cm"
+      "longueur": 30.5
     },
     {
       "id": 6,
       "bois": "Chêne",
       "coeur": "Crin de licorne",
-      "longueur": "35 cm"
+      "longueur": 35
     },
     {
       "id": 7,
       "bois": "Acajou",
       "coeur": "Crin de sombral",
-      "longueur": "31,5 cm"
+      "longueur": 31.5
     },
     {
       "id": 8,
       "bois": "Ébène",
       "coeur": "Plume de griffon",
-      "longueur": "32 cm"
+      "longueur": 32
     },
     {
       "id": 9,
       "bois": "Noisetier",
       "coeur": "Crin de licorne",
-      "longueur": "29,8 cm"
+      "longueur": 29.8
     },
     {
       "id": 10,
       "bois": "Cerisier",
       "coeur": "Plume de phénix",
-      "longueur": "28,5 cm"
+      "longueur": 28.5
     },
     {
       "id": 11,
       "bois": "Orme",
       "coeur": "Crin de licorne",
-      "longueur": "30 cm"
+      "longueur": 30
     },
     {
       "id": 12,
       "bois": "Cyprès",
       "coeur": "Plume de phénix",
-      "longueur": "27,5 cm"
+      "longueur": 27.5
     },
     {
       "id": 13,
       "bois": "Acacia",
       "coeur": "Crin de licorne",
-      "longueur": "30 cm"
+      "longueur": 30
     },
     {
       "id": 14,
       "bois": "Châtaignier",
       "coeur": "Crin de licorne",
-      "longueur": "29,3 cm"
+      "longueur": 29.3
     },
     {
       "id": 15,
       "bois": "Poirier",
       "coeur": "Plume de phénix",
-      "longueur": "28,8 cm"
+      "longueur": 28.8
     },
     {
       "id": 16,
       "bois": "Saule",
       "coeur": "Crin de licorne",
-      "longueur": "29,7 cm"
+      "longueur": 29.7
     },
     {
       "id": 17,
       "bois": "Hêtre",
       "coeur": "Plume de phénix",
-      "longueur": "28,2 cm"
+      "longueur": 28.2
     },
     {
       "id": 18,
       "bois": "Pin",
       "coeur": "Crin de licorne",
-      "longueur": "30,2 cm"
+      "longueur": 30.2
     },
     {
       "id": 19,
       "bois": "Frêne",
       "coeur": "Plume de phénix",
-      "longueur": "28,3 cm"
+      "longueur": 28.3
     },
     {
       "id": 20,
       "bois": "Bouleau",
       "coeur": "Crin de licorne",
-      "longueur": "30,1 cm"
+      "longueur": 30.1
     }
   ]
 }
