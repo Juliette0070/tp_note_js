@@ -17,24 +17,7 @@ export default class DetailPerso{
             myList.appendChild(baguette);
         }
         if (perso.animal && perso.animal != null) {
-            myList.appendChild(document.createElement("li")).textContent = "Animal:";
-            let animal = document.createElement("ul");
-            animal.appendChild(document.createElement("li")).textContent = perso.animal.nom;
-            animal.appendChild(document.createElement("li")).textContent = perso.animal.espece;
-            myList.appendChild(animal);
-        }
-        if (perso.sorts) {
-            myList.appendChild(document.createElement("li")).textContent = "Sorts:";
-            let sort = document.createElement("ul");
-            perso.sorts.forEach(sort => {
-                sort.appendChild(document.createElement("li")).textContent = sort.nom;
-            });
-            if (perso.sorts.length == 0) {
-                sort.appendChild(document.createElement("li")).textContent = "Aucun sort";
-            }
-            myList.appendChild(sort);
-        }
-        if (perso.animal_id && perso.animal_id != null) {
+            console.log(perso.animal_id, perso.animal);
             myList.appendChild(document.createElement("li")).textContent = "Animal:";
             let animal = document.createElement("ul");
             animal.appendChild(document.createElement("li")).textContent = perso.animal.nom;
@@ -51,6 +34,17 @@ export default class DetailPerso{
                 objets.appendChild(document.createElement("li")).textContent = "Aucun objet";
             }
             myList.appendChild(objets);
+        }
+        if (perso.sorts) {
+            myList.appendChild(document.createElement("li")).textContent = "Sorts:";
+            let listSort = document.createElement("ul");
+            perso.sorts.forEach(sort => {
+                listSort.appendChild(document.createElement("li")).textContent = sort.nom;
+            });
+            if (perso.sorts.length == 0) {
+                listSort.appendChild(document.createElement("li")).textContent = "Aucun sort";
+            }
+            myList.appendChild(listSort);
         }
         let img = document.createElement("img");
         img.src = perso.image;

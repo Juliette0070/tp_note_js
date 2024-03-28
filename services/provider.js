@@ -12,22 +12,18 @@ export default class Provider {
     }
     static fetchPersonnage = async (id) => {
         try {
-            console.log("fetch perso");
             const responsePerso = await fetch(`${PERSONNAGES}/${id}`);
             const json = await responsePerso.json();
-            console.log("perso ok");
             if (json.baguette_magique_id && json.baguette_magique_id != null) {
                 const responseBaguette = await fetch(`${BAGUETTES}/${json.baguette_magique_id}`);
                 const jsonBaguette = await responseBaguette.json();
                 json.baguette = jsonBaguette;
             }
-            console.log("baguette ok");
-            if (json.animal && json.animal != null) {
-                const responseAnimal = await fetch(`${ANIMAUX}/${json.animal_id}`);
-                const jsonAnimal = await responseAnimal.json();
-                json.animal = jsonAnimal;
-            }
-            console.log("animal ok");
+            // if (json.animal && json.animal != null) {
+            //     const responseAnimal = await fetch(`${ANIMAUX}/${json.animal_id}`);
+            //     const jsonAnimal = await responseAnimal.json();
+            //     json.animal = jsonAnimal;
+            // }
             return json;
         } catch (error) {
             console.error('Error fetching user', error);

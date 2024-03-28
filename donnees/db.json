@@ -7,8 +7,8 @@
       "maison": "Gryffondor",
       "baguette_magique_id": 1,
       "animal_id": 1,
-      "objets": [1, 4, 5],
-      "sorts": [1, 2, 3, 4, 5],
+      "objets_ids": [1, 4, 5],
+      "sorts_ids": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -18,8 +18,8 @@
       "maison": "Gryffondor",
       "baguette_magique_id": 2,
       "animal_id": 4,
-      "objets": [2, 5],
-      "sorts": [1, 2, 3, 4, 5],
+      "objets_ids": [2, 5],
+      "sorts_ids": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -29,8 +29,8 @@
       "maison": "Gryffondor",
       "baguette_magique_id": 3,
       "animal_id": 2,
-      "objets": [],
-      "sorts": [1, 2, 3, 4, 5],
+      "objets_ids": [],
+      "sorts_ids": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -41,8 +41,8 @@
       "maison": "Gryffondor",
       "baguette_magique_id": 4,
       "animal_id": 5,
-      "objets": [],
-      "sorts": [1, 2, 3, 4, 5],
+      "objets_ids": [],
+      "sorts_ids": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -53,8 +53,8 @@
       "maison": "Serpentard",
       "baguette_magique_id": 5,
       "animal_id": null,
-      "objets": [],
-      "sorts": [1, 2, 3, 4, 5],
+      "objets_ids": [],
+      "sorts_ids": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -64,8 +64,8 @@
       "maison": "Gryffondor",
       "baguette_magique_id": 6,
       "animal_id": null,
-      "objets": [],
-      "sorts": [1, 2, 3, 4, 5],
+      "objets_ids": [],
+      "sorts_ids": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -75,8 +75,8 @@
       "maison": "Gryffondor",
       "baguette_magique_id": 7,
       "animal_id": null,
-      "objets": [],
-      "sorts": [1, 2, 3, 4, 5],
+      "objets_ids": [],
+      "sorts_ids": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -87,8 +87,8 @@
       "maison": "Gryffondor",
       "baguette_magique_id": 8,
       "animal_id": null,
-      "objets": [],
-      "sorts": [1, 2, 3, 4, 5],
+      "objets_ids": [],
+      "sorts_ids": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -98,8 +98,8 @@
       "maison": "Serpentard",
       "baguette_magique_id": 9,
       "animal_id": null,
-      "objets": [],
-      "sorts": [1, 2, 3, 4, 5],
+      "objets_ids": [],
+      "sorts_ids": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -109,8 +109,8 @@
       "maison": "Hufflepuff",
       "baguette_magique_id": 10,
       "animal_id": null,
-      "objets": [],
-      "sorts": [1, 2, 3, 4, 5],
+      "objets_ids": [],
+      "sorts_ids": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -120,8 +120,8 @@
       "maison": "Serpentard",
       "baguette_magique_id": 11,
       "animal_id": null,
-      "objets": [],
-      "sorts": [1, 2, 3, 4, 5],
+      "objets_ids": [],
+      "sorts_ids": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -131,8 +131,8 @@
       "maison": "Gryffondor",
       "baguette_magique_id": 12,
       "animal_id": null,
-      "objets": [],
-      "sorts": [1, 2, 3, 4, 5],
+      "objets_ids": [],
+      "sorts_ids": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -142,8 +142,8 @@
       "maison": "Gryffondor",
       "baguette_magique_id": 13,
       "animal_id": null,
-      "objets": [],
-      "sorts": [1, 2, 3, 4, 5],
+      "objets_ids": [],
+      "sorts_ids": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -154,8 +154,8 @@
       "maison": "Gryffondor",
       "baguette_magique_id": 14,
       "animal_id": 3,
-      "objets": [],
-      "sorts": [],
+      "objets_ids": [],
+      "sorts_ids": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -165,8 +165,8 @@
       "maison": "Beauxbâtons",
       "baguette_magique_id": 15,
       "animal_id": null,
-      "objets": [],
-      "sorts": [],
+      "objets_ids": [],
+      "sorts_ids": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -176,8 +176,8 @@
       "maison": "Durmstrang",
       "baguette_magique_id": 16,
       "animal_id": null,
-      "objets": [],
-      "sorts": [],
+      "objets_ids": [],
+      "sorts_ids": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -187,8 +187,8 @@
       "maison": "Hufflepuff",
       "baguette_magique_id": 17,
       "animal_id": null,
-      "objets": [],
-      "sorts": [1, 2, 3, 4, 5],
+      "objets_ids": [],
+      "sorts_ids": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -198,8 +198,8 @@
       "maison": "Ravenclaw",
       "baguette_magique_id": 18,
       "animal_id": null,
-      "objets": [],
-      "sorts": [1, 2, 3, 4, 5],
+      "objets_ids": [],
+      "sorts_ids": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -209,8 +209,8 @@
       "maison": "Gryffondor",
       "baguette_magique_id": 19,
       "animal_id": null,
-      "objets": [],
-      "sorts": [1, 2, 3, 4, 5],
+      "objets_ids": [],
+      "sorts_ids": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -220,8 +220,8 @@
       "maison": "Gryffondor",
       "baguette_magique_id": 20,
       "animal_id": null,
-      "objets": [],
-      "sorts": [1, 2, 3, 4, 5],
+      "objets_ids": [],
+      "sorts_ids": [1, 2, 3, 4, 5],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     }
   ],
