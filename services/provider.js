@@ -19,11 +19,18 @@ export default class Provider {
                 const jsonBaguette = await responseBaguette.json();
                 json.baguette = jsonBaguette;
             }
-            if (json.animal && json.animal != null) {
+            if (json.animal_id && json.animal_id != null) {
                 const responseAnimal = await fetch(`${ANIMAUX}/${json.animal_id}`);
                 const jsonAnimal = await responseAnimal.json();
                 json.animal = jsonAnimal;
             }
+            // if (json.objets_ids && json.objets_ids.length > 0) {
+            //     for (let i = 0; i < json.objets.length; i++) {
+            //         const responseObjet = await fetch(`${OBJETS}/${json.objets[i].id}`);
+            //         const jsonObjet = await responseObjet.json();
+            //         json.objets[i] = jsonObjet;
+            //     }
+            // }
             // if (json.objet && json.objet.length > 0) {
             //     json.objet.map(async (objet) => {
             //         const responseObjet = await fetch(`${OBJETS}/${objet.id}`);
