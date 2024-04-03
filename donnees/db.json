@@ -392,30 +392,35 @@
       "id": 1,
       "nom": "Hedwige",
       "espece": "Chouette",
+      "description": "Une chouette",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
       "id": 2,
       "nom": "Croûtard",
       "espece": "Rat",
+      "description": "Un rat",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
       "id": 3,
       "nom": "Buck",
-      "espece": "Cerf",
+      "espece": "Hippogriffe",
+      "description": "Un hippogriffe",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
       "id": 4,
       "nom": "Pattenrond",
       "espece": "Chat",
+      "description": "Un chat",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
       "id": 5,
       "nom": "Fumseck",
       "espece": "Phénix",
+      "description": "Un phénix",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     }
   ],

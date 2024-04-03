@@ -1,9 +1,12 @@
 import { PERSONNAGES, BAGUETTES, ANIMAUX, OBJETS, SORTS } from '../config.js';
 
 export default class Provider {
-    static fetchPersonnages = async () => {
+    static fetchPersonnages = async (start=-1, limit=-1) => {
         try {
-            const response = await fetch(`${PERSONNAGES}`);
+            let response = await fetch(`${PERSONNAGES}`);
+            if (start >= 0 && limit >= 0) {
+                response = await fetch(`${PERSONNAGES}?_start=${start}&_limit=${limit}`);
+            }
             const json = await response.json();
             return json;
         } catch (error) {

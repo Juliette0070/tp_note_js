@@ -4,13 +4,17 @@ export default class Personnages{
     async render(){
         let personnages = await Provider.fetchPersonnages();
         let view = /* html*/`
-            <h2>Tous les Personnages:</h2>
-            <p class="links"><a href="/#/">Home</a></p>
-            <ul>
-                ${personnages.map(perso => /* html */`
-                    <li><strong><a href="/#/personnages/${perso.id}">${perso.nom}</a></strong> (${perso.maison})</li>
-                `).join('')}
-            </ul>
+            <div class="container">
+                <h2>Tous les Personnages:</h2>
+                <p class="links"><a href="/#/">Home</a></p>
+                <div class="card">
+                    <ul>
+                        ${personnages.map(perso => /* html */`
+                            <li><strong><a href="/#/personnages/${perso.id}">${perso.nom}</a></strong> (${perso.maison})</li>
+                        `).join('')}
+                    </ul>
+                </div>
+            </div>
         `;
         return view;
     }

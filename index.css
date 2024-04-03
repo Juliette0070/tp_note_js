@@ -34,12 +34,6 @@
     margin-left: 15px; /* Décaler les sous-listes */
 }
 
-/* Styles pour les liens */
-.card a {
-    text-decoration: none; /* Supprimer le soulignement des liens */
-    color: #007bff; /* Couleur des liens */
-}
-
 /* Styles pour l'image */
 .card img {
     display: block; /* Pour centrer l'image */
@@ -60,7 +54,7 @@
 }
 
 /* Styles pour le titre */
-h2 {
+h1, h2 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #333; /* Couleur du texte */
@@ -78,17 +72,19 @@ ul li {
     margin-bottom: 10px;
 }
 
-a {
-    color: #007bff; /* Couleur du lien */
-    text-decoration: none;
-    margin: 0 10px; /* Espacement entre les liens */
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 /* Styles pour les paragraphes */
 p {
     margin-bottom: 20px;
+}
+
+/* Styles pour les liens */
+a {
+    color: #1565c0; /* Bleu par défaut */
+    text-decoration: none; /* Supprimer le soulignement */
+    transition: color 0.3s; /* Transition fluide pour le changement de couleur */
+}
+
+/* Styles pour les liens au survol */
+a:hover {
+    color: #64b5f6; /* Bleu plus clair au survol */
 }
