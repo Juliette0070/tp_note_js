@@ -8,9 +8,25 @@ export default class DetailPerso{
         let animal = document.createElement("ul");
         let objets = document.createElement("ul");
         let listSort = document.createElement("ul");
+        // mettre la couleur de la maison en fond
+        // if (perso.maison == "Gryffondor") {
+        //     document.body.style.backgroundColor = "red";
+        // } else if (perso.maison == "Serdaigle") {
+        //     document.body.style.backgroundColor = "blue";
+        // } else if (perso.maison == "Poufsouffle") {
+        //     document.body.style.backgroundColor = "yellow";
+        // } else if (perso.maison == "Serpentard") {
+        //     document.body.style.backgroundColor = "green";
+        // } else {
+        //     document.body.style.backgroundColor = "white";
+        // }
+        let img = document.createElement("img");
+        img.src = perso.image;
         personnage.appendChild(document.createElement("li")).textContent = perso.nom;
         personnage.appendChild(document.createElement("li")).textContent = perso.maison;
         personnage.appendChild(document.createElement("li")).textContent = perso.age + " ans";
+        personnage.appendChild(document.createElement("li")).textContent = "niveau " + perso.niveau;
+        personnage.appendChild(document.createElement("li")).textContent = perso.xp + " points d'expérience";
         if (perso.baguette_magique_id && perso.baguette_magique_id != null) {
             baguette.appendChild(document.createElement("li")).textContent = perso.baguette.bois;
             baguette.appendChild(document.createElement("li")).textContent = perso.baguette.coeur;
@@ -23,22 +39,36 @@ export default class DetailPerso{
         }
         if (perso.objets) {
             perso.objets.forEach(objet => {
-                objets.appendChild(document.createElement("li")).textContent = objet.nom;
+                let elem = document.createElement("li")
+                elem.classList.add("object");
+                objets.appendChild(elem).textContent = objet.nom;
             });
             if (perso.objets.length == 0) {
                 objets.appendChild(document.createElement("li")).textContent = "Aucun objet";
             }
+            objets.classList.add("object-container");
         }
         if (perso.sorts) {
             perso.sorts.forEach(sort => {
-                listSort.appendChild(document.createElement("li")).textContent = sort.nom;
+                let elem = document.createElement("li")
+                elem.classList.add("spell");
+                listSort.appendChild(elem).textContent = sort.nom;
             });
             if (perso.sorts.length == 0) {
                 listSort.appendChild(document.createElement("li")).textContent = "Aucun sort";
             }
+            listSort.classList.add("spell-container");
         }
-        let img = document.createElement("img");
-        img.src = perso.image;
+
+        // liste des sorts existants
+        let sortsExistants = document.createElement("ul");
+        let sorts = await Provider.fetchSorts();
+        sorts.forEach(sort => {
+            let elem = document.createElement("li");
+            elem.classList.add("spell");
+            sortsExistants.appendChild(elem).textContent = sort.nom;
+        });
+        sortsExistants.classList.add("spell-container");
         
         let view = /* html*/`
             <div class="container">
@@ -52,24 +82,54 @@ export default class DetailPerso{
                         <div class="right-column">
                             ${personnage.outerHTML}
                         </div>
-                    </div>
-                    <div class="column card">
-                        <h3>Baguette magique:</h3>
-                        ${baguette.outerHTML}
-                    </div>
-                    <div class="column card">
-                        <h3>Animal:</h3>
-                        ${animal.outerHTML}
+                        <button id="entrainer">Entrainer</button>
                     </div>
                     <div class="card">
-                        ${objets.outerHTML}
+                        <div class="column card">
+                            <h3>Baguette magique:</h3>
+                            ${baguette.outerHTML}
+                        </div>
+                        <div class="column card">
+                            <h3>Animal:</h3>
+                            ${animal.outerHTML}
+                        </div>
                     </div>
                     <div class="card">
-                        ${listSort.outerHTML}
+                        <h3>Objets:</h3>
+                        <div class="object-container">
+                            ${objets.outerHTML}
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Sorts:</h3>
+                        <div class="spell-container">
+                            ${listSort.outerHTML}
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Sorts existants:</h3>
+                        <div class="spell-container">
+                            ${sortsExistants.outerHTML}
+                        </div>
                     </div>
                 </div>
             </div>
         `;
         return view;
+    }
+    async after_render(id){
+        let perso = await Provider.fetchPersonnage(id);
+        let button = document.querySelector("#entrainer");
+        button.addEventListener("click", function() {
+            perso.xp += 10;
+            console.log("Expérience du personnage incrémentée de 10 : ", perso.xp);
+            Provider.addXp(perso.id, perso.xp);
+            // vérifier si des niveaux sont passés
+            while (perso.xp/100 >= perso.niveau) {
+                perso.niveau += 1;
+                console.log("Niveau du personnage incrémenté de 1 : ", perso.niveau);
+                Provider.addNiveau(perso.id, perso.niveau);
+            }
+        });
     }
 }

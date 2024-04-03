@@ -49,4 +49,49 @@ export default class Provider {
             return;
         }
     }
+    static addXp = async (id, xp) => {
+        try {
+            const response = await fetch(`${PERSONNAGES}/${id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    xp: xp
+                })
+            });
+            const json = await response.json();
+            return json;
+        } catch (error) {
+            console.error('Error adding xp', error);
+            return;
+        }
+    }
+    static addNiveau = async (id, niveau) => {
+        try {
+            const response = await fetch(`${PERSONNAGES}/${id}`, {
+                method: 'PATCH',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    niveau: niveau
+                })
+            });
+            const json = await response.json();
+            return json;
+        } catch (error) {
+            console.error('Error adding niveau', error);
+            return;
+        }
+    }
+    static fetchSorts = async () => {
+        try {
+            const response = await fetch(`${SORTS}`);
+            const json = await response.json();
+            return json;
+        } catch (error) {
+            console.error('Error fetching sorts', error);
+        }
+    }
 }

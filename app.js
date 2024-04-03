@@ -19,6 +19,7 @@ const router = async () => {
     console.log(page);
     if (parsedURL === '/personnages/:id') {
         content.innerHTML = await page.render(request.id);
+        await page.after_render(request.id);
     } else {
         content.innerHTML = await page.render();
     }

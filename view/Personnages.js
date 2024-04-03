@@ -3,6 +3,7 @@ import Provider from '../services/provider.js';
 export default class Personnages{
     async render(){
         let personnages = await Provider.fetchPersonnages();
+        document.body.style.backgroundColor = "white";
         let view = /* html*/`
             <div class="container">
                 <h2>Tous les Personnages:</h2>
