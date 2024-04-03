@@ -1,0 +1,94 @@
+/* Styles pour le conteneur principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centrer le contenu */
+}
+
+/* Styles pour la carte */
+.card {
+    width: 80%; /* Largeur de la carte */
+    margin: 0 auto; /* Centrer la carte horizontalement */
+    padding: 15px; /* Ajouter un peu d'espace intérieur */
+    border: 1px solid #ccc; /* Ajouter une bordure */
+    border-radius: 10px; /* Ajouter une bordure arrondie */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajouter une ombre */
+    background-color: #f9f9f9; /* Couleur de fond */
+}
+
+/* Styles pour les éléments de la liste */
+.card ul {
+    list-style-type: none; /* Supprimer les puces */
+    padding: 0; /* Supprimer les marges intérieures */
+}
+
+/* Styles pour chaque élément de la liste */
+.card li {
+    margin-bottom: 10px; /* Ajouter de l'espace entre les éléments */
+}
+
+/* Styles pour les sous-listes */
+.card ul ul {
+    margin-left: 15px; /* Décaler les sous-listes */
+}
+
+/* Styles pour les liens */
+.card a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: #007bff; /* Couleur des liens */
+}
+
+/* Styles pour l'image */
+.card img {
+    display: block; /* Pour centrer l'image */
+    margin: 0 auto 20px; /* Centrer l'image et ajouter de l'espace en dessous */
+}
+
+/* Styles pour les liens */
+.links {
+    text-align: center; /* Alignement au centre */
+}
+
+/* Styles pour les colonnes */
+.column {
+    width: 40%; /* Largeur des colonnes */
+    display: inline-block; /* Afficher comme un bloc en ligne */
+    vertical-align: top; /* Aligner le contenu en haut */
+    padding: 0 10px; /* Espacement intérieur */
+}
+
+/* Styles pour le titre */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Couleur du texte */
+    text-align: center; /* Alignement au centre */
+    margin-top: 0; /* Pour éviter l'espace au-dessus du titre */
+}
+
+/* Styles pour la liste */
+ul {
+    padding: 0;
+    list-style: none; /* Supprimer les puces */
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff; /* Couleur du lien */
+    text-decoration: none;
+    margin: 0 10px; /* Espacement entre les liens */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour les paragraphes */
+p {
+    margin-bottom: 20px;
+}

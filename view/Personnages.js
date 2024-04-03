@@ -5,7 +5,7 @@ export default class Personnages{
         let personnages = await Provider.fetchPersonnages();
         let view = /* html*/`
             <h2>Tous les Personnages:</h2>
-            <p><a href="/#/">Home</a></p>
+            <p class="links"><a href="/#/">Home</a></p>
             <ul>
                 ${personnages.map(perso => /* html */`
                     <li><strong><a href="/#/personnages/${perso.id}">${perso.nom}</a></strong> (${perso.maison})</li>

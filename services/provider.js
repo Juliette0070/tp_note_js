@@ -24,27 +24,22 @@ export default class Provider {
                 const jsonAnimal = await responseAnimal.json();
                 json.animal = jsonAnimal;
             }
-            // if (json.objets_ids && json.objets_ids.length > 0) {
-            //     for (let i = 0; i < json.objets.length; i++) {
-            //         const responseObjet = await fetch(`${OBJETS}/${json.objets[i].id}`);
-            //         const jsonObjet = await responseObjet.json();
-            //         json.objets[i] = jsonObjet;
-            //     }
-            // }
-            // if (json.objet && json.objet.length > 0) {
-            //     json.objet.map(async (objet) => {
-            //         const responseObjet = await fetch(`${OBJETS}/${objet.id}`);
-            //         const jsonObjet = await responseObjet.json();
-            //         objet = jsonObjet;
-            //     });
-            // }
-            // if (json.sort && json.sort.length > 0) {
-                // json.sort.map(async (sort) => {
-                    // const responseSort = await fetch(`${SORTS}/${sort.id}`);
-                    // const jsonSort = await responseSort.json();
-                    // sort = jsonSort;
-                // });
-            // }
+            if (json.objets_ids) {
+                json.objets = [];
+                for (let i = 0; i < json.objets_ids.length; i++) {
+                    const responseObjet = await fetch(`${OBJETS}/${json.objets_ids[i]}`);
+                    const jsonObjet = await responseObjet.json();
+                    json.objets[i] = jsonObjet;
+                }
+            }
+            if (json.sorts_ids) {
+                json.sorts = [];
+                for (let i = 0; i < json.sorts_ids.length; i++) {
+                    const responseObjet = await fetch(`${SORTS}/${json.sorts_ids[i]}`);
+                    const jsonObjet = await responseObjet.json();
+                    json.sorts[i] = jsonObjet;
+                }
+            }
             return json;
         } catch (error) {
             console.error('Error fetching user', error);
