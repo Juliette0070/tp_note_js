@@ -2,11 +2,11 @@ import { PERSONNAGES, BAGUETTES, ANIMAUX, OBJETS, SORTS } from '../config.js';
 import DetailPerso from '../view/DetailPerso.js';
 
 export default class Provider {
-    static fetchPersonnages = async (start=-1, limit=-1) => {
+    static fetchPersonnages = async (page=-1, limit=-1) => {
         try {
             let response = await fetch(`${PERSONNAGES}`);
-            if (start >= 0 && limit >= 0) {
-                response = await fetch(`${PERSONNAGES}?_start=${start}&_limit=${limit}`);
+            if (page >= 0 && limit >= 0) {
+                response = await fetch(`${PERSONNAGES}?_page=${page}&_limit=${limit}`);
             }
             const json = await response.json();
             return json;
