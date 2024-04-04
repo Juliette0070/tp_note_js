@@ -1,23 +1,50 @@
 {
   "personnages": [
     {
-      "xp": null,
-      "id": "1"
+      "id": "1",
+      "nom": "Harry Potter",
+      "age": 17,
+      "niveau": 1,
+      "xp": 0,
+      "maison": "Gryffondor",
+      "baguette_magique_id": 1,
+      "animal_id": 1,
+      "objets_ids": [1, 4, 5],
+      "sorts_ids": [],
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
-      "xp": 50,
-      "id": "2"
+      "id": "2",
+      "nom": "Hermione Granger",
+      "age": 17,
+      "niveau": 3,
+      "xp": 260,
+      "maison": "Gryffondor",
+      "baguette_magique_id": 2,
+      "animal_id": 4,
+      "objets_ids": [3],
+      "sorts_ids": [],
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
-      "xp": 650,
-      "id": "3"
+      "id": "3",
+      "nom": "Ron Weasley",
+      "age": 17,
+      "niveau": 1,
+      "xp": 0,
+      "maison": "Gryffondor",
+      "baguette_magique_id": 3,
+      "animal_id": 2,
+      "objets_ids": [],
+      "sorts_ids": [],
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
       "id": "4",
       "nom": "Albus Dumbledore",
       "age": 115,
-      "niveau": 1,
-      "xp": 90,
+      "niveau": 2,
+      "xp": 120,
       "maison": "Gryffondor",
       "baguette_magique_id": 4,
       "animal_id": 5,
@@ -30,7 +57,7 @@
       "nom": "Severus Rogue",
       "age": 38,
       "niveau": 2,
-      "xp": 110,
+      "xp": 140,
       "maison": "Serpentard",
       "baguette_magique_id": 5,
       "animal_id": null,
@@ -55,8 +82,8 @@
       "id": "7",
       "nom": "Remus Lupin",
       "age": 38,
-      "niveau": 1,
-      "xp": 0,
+      "niveau": 5,
+      "xp": 410,
       "maison": "Gryffondor",
       "baguette_magique_id": 7,
       "animal_id": null,

@@ -108,7 +108,7 @@ export default class DetailPerso{
     async after_render(id){
         let perso = await Provider.fetchPersonnage(id);
         let button = document.querySelector("#entrainer");
-        button.addEventListener("click", function() {
+        button.addEventListener("click", async function() {
             perso.xp += 10;
             console.log("Expérience du personnage incrémentée de 10 : ", perso.xp);
             // vérifier si des niveaux sont passés
@@ -116,7 +116,7 @@ export default class DetailPerso{
                 perso.niveau += 1;
                 console.log("Niveau du personnage incrémenté de 1 : ", perso.niveau);
             }
-            Provider.updatePersonnage(perso);
+            await Provider.updatePersonnage(perso);
             // Recharger la page
             window.location.reload();
         });
