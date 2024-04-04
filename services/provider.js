@@ -1,4 +1,5 @@
 import { PERSONNAGES, BAGUETTES, ANIMAUX, OBJETS, SORTS } from '../config.js';
+import DetailPerso from '../view/DetailPerso.js';
 
 export default class Provider {
     static fetchPersonnages = async (start=-1, limit=-1) => {
@@ -49,39 +50,23 @@ export default class Provider {
             return;
         }
     }
-    static addXp = async (id, xp) => {
+    static updatePersonnage = async (perso) => {
         try {
-            const response = await fetch(`${PERSONNAGES}/${id}`, {
+            const { id, nom, age, niveau, xp, maison, baguette_magique_id, animal_id, objets_ids, sorts_ids, image } = perso;
+            const body = JSON.stringify({ id, nom, age, niveau, xp, maison, baguette_magique_id, animal_id, objets_ids, sorts_ids, image });
+            console.log(body);
+
+            const response = await fetch(`${PERSONNAGES}/${perso.id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({
-                    xp: xp
-                })
+                body: body
             });
             const json = await response.json();
             return json;
         } catch (error) {
-            console.error('Error adding xp', error);
-            return;
-        }
-    }
-    static addNiveau = async (id, niveau) => {
-        try {
-            const response = await fetch(`${PERSONNAGES}/${id}`, {
-                method: 'PATCH',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    niveau: niveau
-                })
-            });
-            const json = await response.json();
-            return json;
-        } catch (error) {
-            console.error('Error adding niveau', error);
+            console.error('Error updating personnage', error);
             return;
         }
     }

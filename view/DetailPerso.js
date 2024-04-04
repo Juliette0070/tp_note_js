@@ -8,18 +8,6 @@ export default class DetailPerso{
         let animal = document.createElement("ul");
         let objets = document.createElement("ul");
         let listSort = document.createElement("ul");
-        // mettre la couleur de la maison en fond
-        // if (perso.maison == "Gryffondor") {
-        //     document.body.style.backgroundColor = "red";
-        // } else if (perso.maison == "Serdaigle") {
-        //     document.body.style.backgroundColor = "blue";
-        // } else if (perso.maison == "Poufsouffle") {
-        //     document.body.style.backgroundColor = "yellow";
-        // } else if (perso.maison == "Serpentard") {
-        //     document.body.style.backgroundColor = "green";
-        // } else {
-        //     document.body.style.backgroundColor = "white";
-        // }
         let img = document.createElement("img");
         img.src = perso.image;
         personnage.appendChild(document.createElement("li")).textContent = perso.nom;
@@ -123,13 +111,29 @@ export default class DetailPerso{
         button.addEventListener("click", function() {
             perso.xp += 10;
             console.log("Expérience du personnage incrémentée de 10 : ", perso.xp);
-            Provider.addXp(perso.id, perso.xp);
             // vérifier si des niveaux sont passés
             while (perso.xp/100 >= perso.niveau) {
                 perso.niveau += 1;
                 console.log("Niveau du personnage incrémenté de 1 : ", perso.niveau);
-                Provider.addNiveau(perso.id, perso.niveau);
             }
+            Provider.updatePersonnage(perso);
+            // Recharger la page
+            window.location.reload();
         });
+
+        // Sélectionnez l'élément avec la classe 'perso'
+        var persoElement = document.querySelector('.perso');
+        // Vérifier la maison du personnage et appliquer le style de fond en conséquence
+        if (perso.maison == "Gryffondor") {
+            persoElement.style.backgroundColor = "red";
+        } else if (perso.maison == "Serdaigle") {
+            persoElement.style.backgroundColor = "blue";
+        } else if (perso.maison == "Poufsouffle") {
+            persoElement.style.backgroundColor = "yellow";
+        } else if (perso.maison == "Serpentard") {
+            persoElement.style.backgroundColor = "green";
+        } else {
+            persoElement.style.backgroundColor = "white";
+        }
     }
 }
