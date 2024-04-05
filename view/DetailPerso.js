@@ -1,7 +1,10 @@
 import Provider from "../services/provider.js";
 
 export default class DetailPerso{
+    // garder l'id du personnage pour l'utiliser dans la méthode after_render
+    constructor(){this.id = null;}
     async render(id){
+        this.id = id;
         let perso = await Provider.fetchPersonnage(id);
         let personnage = document.createElement('ul');
         let baguette = document.createElement("ul");

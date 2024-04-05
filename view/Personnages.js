@@ -1,7 +1,10 @@
 import Provider from '../services/provider.js';
 
 export default class Personnages{
+    // garder la page pour l'utiliser dans la méthode after_render
+    constructor(){this.page = 1;}
     async render(page = 1){
+        this.page = page;
         const pageSize = 5;
         let personnages = await Provider.fetchPersonnages(page, pageSize);
         document.body.style.backgroundColor = "white";
@@ -22,18 +25,17 @@ export default class Personnages{
         `;
         return view;
     }
-    async after_render(page = 1){
+    async after_render(){
+        let content = document.querySelector("#content");
         document.getElementById('prevPage').addEventListener('click', async () => {
-            console.log("aa");
-            if (page > 1) {
-                page--;
-                document.location.href = `#/personnages/pages/${page}`;
+            if (this.page > 1) {
+                this.page--;
+                content.innerHTML = await this.render(this.page);
             }
         });
         document.getElementById('nextPage').addEventListener('click', async () => {
-            console.log("bb");
-            page++;
-            document.location.href = `#/personnages/pages/${page}`;
+            this.page++;
+            content.innerHTML = await this.render(this.page);
         });
     }
 }

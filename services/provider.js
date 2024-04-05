@@ -4,11 +4,16 @@ import DetailPerso from '../view/DetailPerso.js';
 export default class Provider {
     static fetchPersonnages = async (page=-1, limit=-1) => {
         try {
-            let response = await fetch(`${PERSONNAGES}`);
+            let json = {};
             if (page >= 0 && limit >= 0) {
-                response = await fetch(`${PERSONNAGES}?_page=${page}&_limit=${limit}`);
+                let response = await fetch(`${PERSONNAGES}?_page=${page}&_per_page=${limit}`);
+                const jsonTemp = await response.json();
+                json = jsonTemp.data;
+            } else {
+                let response = await fetch(`${PERSONNAGES}`);
+                json = await response.json();
             }
-            const json = await response.json();
+            console.log(json);
             return json;
         } catch (error) {
             console.error('Error fetching users', error);
