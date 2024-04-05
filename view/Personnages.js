@@ -31,11 +31,15 @@ export default class Personnages{
             if (this.page > 1) {
                 this.page--;
                 content.innerHTML = await this.render(this.page);
+                await this.after_render();
             }
         });
         document.getElementById('nextPage').addEventListener('click', async () => {
-            this.page++;
-            content.innerHTML = await this.render(this.page);
+            if (this.page < 4) { // à modifier pour avoir le vrai nombre de pages
+                this.page++;
+                content.innerHTML = await this.render(this.page);
+                await this.after_render();
+            }
         });
     }
 }
