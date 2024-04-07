@@ -111,7 +111,17 @@ export default class DetailPerso{
         let favoris = JSON.parse(localStorage.getItem('favoris')) || [];
         if (favoris.some(fav => fav === perso.id)) {btnFavoris.textContent = "Retirer des favoris";}
         else {btnFavoris.textContent = "Ajouter aux favoris";}
-        
+        // calculer la moyenne des notes
+        let moyenneNotes = perso.notations.length > 0 ? perso.notations.reduce((acc, curr) => acc + curr, 0) / perso.notations.length : 0;
+
+        // formulaire pour ajouter une nouvelle note
+        let formHTML = `
+            <form id="add-note-form">
+                <label for="note">Note:</label>
+                <input type="number" id="note" name="note" min="0" max="10" required>
+                <button type="submit">Ajouter</button>
+            </form>
+        `;
         let view = /* html*/`
             <div class="container">
                 <p class="links"><a href="/#/">Home</a> - <a href="/#/personnages">Personnages</a> - <a href="/#/favoris">Favoris</a></p>
@@ -126,6 +136,8 @@ export default class DetailPerso{
                         </div>
                         <button id="entrainer">Entrainer</button>
                         ${btnFavoris.outerHTML}
+                        <p>Moyenne des notes: ${moyenneNotes.toFixed(1)}</p>
+                        ${formHTML}
                     </div>
                     <div class="card">
                         <div class="column card">
@@ -332,5 +344,34 @@ export default class DetailPerso{
             observer.observe(img);
         });
         cadenas();
+        // écouter le soumission du formulaire pour ajouter une nouvelle note
+        document.getElementById('add-note-form').addEventListener('submit', async (event) => {
+            // vérifier si la personne a déjà noté ce personnage avec local data storage ( dans le storage: notes = [idPerso1, idPerso2, ...])
+            let notes = JSON.parse(localStorage.getItem('notes')) || [];
+            if (notes.some(id => id === DetailPerso.idPerso)) {
+                alert('Vous avez déjà noté ce personnage.');
+                return;
+            } else {
+                notes.push(DetailPerso.idPerso);
+                localStorage.setItem('notes', JSON.stringify(notes));
+            }
+            event.preventDefault();
+            let note = parseInt(document.getElementById('note').value);
+            if (!isNaN(note) && note >= 0 && note <= 10) {
+                await this.addNoteToPerso(note);
+                // actualiser la moyenne des notes
+                perso = await Provider.fetchPersonnage(DetailPerso.idPerso);
+                let moyenneNotes = perso.notations.length > 0 ? perso.notations.reduce((acc, curr) => acc + curr, 0) / perso.notations.length : 0;
+                document.querySelector('.card.perso p').textContent = `Moyenne des notes: ${moyenneNotes.toFixed(1)}`;
+                document.getElementById('add-note-form').reset();
+            } else {
+                alert('Veuillez entrer une note valide entre 0 et 10.');
+            }
+        });
+    }
+    async addNoteToPerso(note) {
+        let perso = await Provider.fetchPersonnage(DetailPerso.idPerso);
+        perso.notations.push(note);
+        await Provider.updatePersonnage(perso);
     }
 }
