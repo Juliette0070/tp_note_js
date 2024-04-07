@@ -3,12 +3,14 @@ import Home from "./view/Home.js";
 import Utils from "./services/utils.js";
 import Personnages from "./view/Personnages.js";
 import DetailPerso from "./view/DetailPerso.js";
+import Favoris from "./view/Favoris.js";
 
 const routes = {
     '/': Home,
     '/home': Home,
     '/personnages': Personnages,
     '/personnages/:id': DetailPerso,
+    '/favoris': Favoris
 };
 
 const router = async () => {

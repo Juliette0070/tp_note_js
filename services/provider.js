@@ -4,17 +4,18 @@ import DetailPerso from '../view/DetailPerso.js';
 export default class Provider {
     static fetchPersonnages = async (page=-1, limit=-1) => {
         try {
-            let json = {};
+            let personnages = {};
+            let nbPages = 1;
             if (page >= 0 && limit >= 0) {
-                let response = await fetch(`${PERSONNAGES}?_page=${page}&_per_page=${limit}`);
+                let response = await fetch(`${PERSONNAGES}?_page=${page}&_per_page=${limit}`);//&nom_like=Harry
                 const jsonTemp = await response.json();
-                json = jsonTemp.data;
+                personnages = jsonTemp.data;
+                nbPages = jsonTemp.pages;
             } else {
                 let response = await fetch(`${PERSONNAGES}`);
-                json = await response.json();
+                personnages = await response.json();
             }
-            console.log(json);
-            return json;
+            return [personnages, nbPages];
         } catch (error) {
             console.error('Error fetching users', error);
         }
@@ -81,6 +82,15 @@ export default class Provider {
             return json;
         } catch (error) {
             console.error('Error fetching sorts', error);
+        }
+    }
+    static fetchObjets = async () => {
+        try {
+            const response = await fetch(`${OBJETS}`);
+            const json = await response.json();
+            return json;
+        } catch (error) {
+            console.error('Error fetching objets', error);
         }
     }
 }
