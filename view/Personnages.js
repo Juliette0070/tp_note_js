@@ -16,7 +16,10 @@ export default class Personnages{
             <div class="container">
                 <p class="links"><a href="/#/">Home</a> - <a href="/#/favoris">Favoris</a></p>
                 <h2>Tous les Personnages:</h2>
-                <div class="card">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Rechercher un personnage...">
+                </div>
+                <div class="card" id="personnagesList">
                     <ul>
                         ${personnages.map(perso => /* html */`
                             <li>
@@ -49,5 +52,34 @@ export default class Personnages{
                 await this.after_render();
             }
         });
+        // Écouter les événements de saisie dans le champ de recherche
+        document.getElementById('searchInput').addEventListener('input', async (event) => {
+            let searchQuery = event.target.value.trim().toLowerCase();
+            let result = await Provider.fetchPersonnages(); // Récupérer tous les personnages
+            let personnages = result[0];
+            let filteredPersonnages = personnages.filter(perso => perso.nom.toLowerCase().includes(searchQuery));
+            let favoris = JSON.parse(localStorage.getItem("favoris")) || [];
+            this.updatePersonnagesList(filteredPersonnages, favoris);
+        });
+    }
+
+    generatePersonnagesList(personnages, favoris) {
+        return personnages.map(perso => /* html */ `
+            <li>
+                <strong><a href="/#/personnages/${perso.id}">${perso.nom}</a></strong> (${perso.maison})
+                <span class="fav" data-id="${perso.id}">${favoris.some(fav => fav === perso.id) ? '★' : '☆'}</span>
+            </li>
+        `).join('');
+    }
+
+    updatePersonnagesList(personnages, favoris) {
+        let personnagesList = document.getElementById('personnagesList');
+        personnagesList.innerHTML = '';
+        personnagesList.appendChild(document.createElement('ul'));
+        personnagesList.querySelector('ul').innerHTML = this.generatePersonnagesList(personnages, favoris);
+        // ajouter le lien vers la page des personnages à links 
+        document.querySelector('.links').innerHTML = /* html */`
+            <a href="/#/">Home</a> - <a href="/#/personnages/">Personnages</a> - <a href="/#/favoris">Favoris</a>
+        `;
     }
 }
