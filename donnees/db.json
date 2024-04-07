@@ -4,8 +4,8 @@
       "id": "1",
       "nom": "Harry Potter",
       "age": 17,
-      "niveau": 75,
-      "xp": 7410,
+      "niveau": 86,
+      "xp": 8510,
       "maison": "Gryffondor",
       "baguette_magique_id": 1,
       "animal_id": 1,
@@ -18,22 +18,59 @@
         "8",
         "3"
       ],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ],
+      "notations": [],
       "image": "https://resize.elle.fr/square/var/plain_site/storage/images/loisirs/livres/news/harry-potter-de-nouveaux-secrets-devoiles-2913738/53231812-1-fre-FR/Harry-Potter-de-nouveaux-secrets-devoiles.jpg"
     },
     {
       "id": "2",
       "nom": "Hermione Granger",
       "age": 17,
-      "niveau": 3,
-      "xp": 270,
+      "niveau": 21,
+      "xp": 2070,
       "maison": "Gryffondor",
       "baguette_magique_id": 2,
       "animal_id": 4,
       "objets_ids": [
-        "3"
+        "3",
+        "19",
+        "10"
       ],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
       "notations": [],
       "image": "data:image/jpeg;base64,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"
     },
@@ -41,22 +78,29 @@
       "id": "3",
       "nom": "Ron Weasley",
       "age": 17,
-      "niveau": 1,
-      "xp": 0,
+      "niveau": 8,
+      "xp": 700,
       "maison": "Gryffondor",
       "baguette_magique_id": 3,
       "animal_id": 2,
       "objets_ids": [],
-      "sorts_ids": [],
-      "notations": [],
-      "image": "data:image/jpeg;base64,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"
+      "sorts_ids": [
+        "2",
+        "3",
+        "7",
+        "1",
+        "6",
+        "4"
+      ],
+      "image": "data:image/jpeg;base64,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",
+      "notations": []
     },
     {
       "id": "4",
       "nom": "Albus Dumbledore",
       "age": 115,
-      "niveau": 202,
-      "xp": 20140,
+      "niveau": 203,
+      "xp": 20240,
       "maison": "Gryffondor",
       "baguette_magique_id": 4,
       "animal_id": 5,
@@ -66,35 +110,72 @@
         "3",
         "5"
       ],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ],
+      "notations": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
       "id": "5",
       "nom": "Severus Rogue",
       "age": 38,
-      "niveau": 12,
-      "xp": 1170,
+      "niveau": 13,
+      "xp": 1270,
       "maison": "Serpentard",
       "baguette_magique_id": 5,
       "animal_id": null,
       "objets_ids": [
         "19"
       ],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "notations": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
       "id": "6",
       "nom": "Sirius Black",
       "age": 36,
-      "niveau": 1,
-      "xp": 0,
+      "niveau": 2,
+      "xp": 100,
       "maison": "Gryffondor",
       "baguette_magique_id": 6,
       "animal_id": null,
       "objets_ids": [],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "2",
+        "3",
+        "7"
+      ],
       "notations": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
@@ -108,7 +189,10 @@
       "baguette_magique_id": 7,
       "animal_id": null,
       "objets_ids": [],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "2",
+        "3"
+      ],
       "notations": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
@@ -116,8 +200,8 @@
       "id": "8",
       "nom": "Minerva McGonagall",
       "age": 70,
-      "niveau": 171,
-      "xp": 17000,
+      "niveau": 172,
+      "xp": 17100,
       "maison": "Gryffondor",
       "baguette_magique_id": 8,
       "animal_id": null,
@@ -133,7 +217,29 @@
         "12",
         "2"
       ],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ],
+      "notations": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -146,7 +252,10 @@
       "baguette_magique_id": 9,
       "animal_id": null,
       "objets_ids": [],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "2",
+        "3"
+      ],
       "notations": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
@@ -154,8 +263,8 @@
       "id": "10",
       "nom": "Nymphadora Tonks",
       "age": 23,
-      "niveau": 21,
-      "xp": 2000,
+      "niveau": 28,
+      "xp": 2700,
       "maison": "Poufsouffle",
       "baguette_magique_id": 10,
       "animal_id": null,
@@ -163,7 +272,23 @@
         "6",
         "4"
       ],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "notations": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -176,7 +301,10 @@
       "baguette_magique_id": 11,
       "animal_id": null,
       "objets_ids": [],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "2",
+        "3"
+      ],
       "notations": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
@@ -190,7 +318,10 @@
       "baguette_magique_id": 12,
       "animal_id": null,
       "objets_ids": [],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "2",
+        "3"
+      ],
       "notations": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
@@ -206,7 +337,11 @@
       "objets_ids": [
         "15"
       ],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "2",
+        "3"
+      ],
+      "notations": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -219,7 +354,10 @@
       "baguette_magique_id": 14,
       "animal_id": 3,
       "objets_ids": [],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "2",
+        "3"
+      ],
       "notations": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
@@ -233,7 +371,10 @@
       "baguette_magique_id": 15,
       "animal_id": null,
       "objets_ids": [],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "2",
+        "3"
+      ],
       "notations": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
@@ -247,7 +388,10 @@
       "baguette_magique_id": 16,
       "animal_id": null,
       "objets_ids": [],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "2",
+        "3"
+      ],
       "notations": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
@@ -261,7 +405,10 @@
       "baguette_magique_id": 17,
       "animal_id": null,
       "objets_ids": [],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "2",
+        "3"
+      ],
       "notations": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
@@ -278,7 +425,11 @@
         "7",
         "17"
       ],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "2",
+        "3"
+      ],
+      "notations": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
     {
@@ -291,7 +442,10 @@
       "baguette_magique_id": 19,
       "animal_id": null,
       "objets_ids": [],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "2",
+        "3"
+      ],
       "notations": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     },
@@ -305,7 +459,10 @@
       "baguette_magique_id": 20,
       "animal_id": null,
       "objets_ids": [],
-      "sorts_ids": [],
+      "sorts_ids": [
+        "2",
+        "3"
+      ],
       "notations": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4BBkpjZK-LEhsVdIY6gLJzo-dybnB8qHj24vIDlCvRdmqX0pGhQrz6BSA4XsTbtkkgQ&usqp=CAU"
     }
@@ -616,7 +773,7 @@
       "id": "1",
       "nom": "Expelliarmus",
       "description": "Sortilège de désarmement",
-      "niveau": 2
+      "niveau": 3
     },
     {
       "id": "2",
@@ -634,19 +791,19 @@
       "id": "4",
       "nom": "Petrificus Totalus",
       "description": "Sortilège de pétrification",
-      "niveau": 4
+      "niveau": 8
     },
     {
       "id": "5",
       "nom": "Rictusempra",
       "description": "Sortilège chatouilleur",
-      "niveau": 4
+      "niveau": 11
     },
     {
       "id": "6",
       "nom": "Accio",
       "description": "Sortilège d'attraction",
-      "niveau": 3
+      "niveau": 4
     },
     {
       "id": "7",
@@ -658,79 +815,79 @@
       "id": "8",
       "nom": "Aguamenti",
       "description": "Sortilège de création d'eau",
-      "niveau": 3
+      "niveau": 12
     },
     {
       "id": "9",
       "nom": "Expulso",
       "description": "Sortilège d'expulsion",
-      "niveau": 4
+      "niveau": 13
     },
     {
       "id": "10",
       "nom": "Expecto Patronum",
       "description": "Sortilège du Patronus",
-      "niveau": 5
+      "niveau": 15
     },
     {
       "id": "11",
       "nom": "Sectumsempra",
       "description": "Sortilège lacérateur",
-      "niveau": 6
+      "niveau": 17
     },
     {
       "id": "12",
       "nom": "Fiendfyre",
       "description": "Sortilège de feu démoniaque",
-      "niveau": 7
+      "niveau": 18
     },
     {
       "id": "13",
       "nom": "Obliviate",
       "description": "Sortilège d'amnésie",
-      "niveau": 6
+      "niveau": 22
     },
     {
       "id": "14",
       "nom": "Protego Maxima",
       "description": "Sortilège de protection maximale",
-      "niveau": 7
+      "niveau": 27
     },
     {
       "id": "15",
       "nom": "Stupefy",
       "description": "Sortilège de stupeur",
-      "niveau": 3
+      "niveau": 34
     },
     {
       "id": "16",
       "nom": "Incendio",
       "description": "Sortilège d'incendie",
-      "niveau": 4
+      "niveau": 39
     },
     {
       "id": "17",
       "nom": "Confundo",
       "description": "Sortilège de confusion",
-      "niveau": 5
+      "niveau": 45
     },
     {
       "id": "18",
       "nom": "Impedimenta",
       "description": "Sortilège d'entrave",
-      "niveau": 4
+      "niveau": 51
     },
     {
       "id": "19",
       "nom": "Avis",
       "description": "Sortilège d'oiseaux",
-      "niveau": 2
+      "niveau": 58
     },
     {
       "id": "20",
       "nom": "Incarcerous",
       "description": "Sortilège d'entraves",
-      "niveau": 3
+      "niveau": 67
     }
   ]
 }

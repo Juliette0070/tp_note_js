@@ -58,8 +58,8 @@ export default class Provider {
     }
     static updatePersonnage = async (perso) => {
         try {
-            const { id, nom, age, niveau, xp, maison, baguette_magique_id, animal_id, objets_ids, sorts_ids, image } = perso;
-            const body = JSON.stringify({ id, nom, age, niveau, xp, maison, baguette_magique_id, animal_id, objets_ids, sorts_ids, image });
+            const { id, nom, age, niveau, xp, maison, baguette_magique_id, animal_id, objets_ids, sorts_ids, image, notations } = perso;
+            const body = JSON.stringify({ id, nom, age, niveau, xp, maison, baguette_magique_id, animal_id, objets_ids, sorts_ids, image, notations });
 
             const response = await fetch(`${PERSONNAGES}/${perso.id}`, {
                 method: 'PUT',

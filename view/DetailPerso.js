@@ -1,11 +1,10 @@
 import Provider from "../services/provider.js";
 
-const currentWindow = window;
-
 export default class DetailPerso{
     // garder l'id du personnage pour l'utiliser dans la méthode after_render
     static idPerso = 1;
     async render(id){
+        document.head.innerHTML += `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">`;
         DetailPerso.idPerso = id;
         let perso = await Provider.fetchPersonnage(DetailPerso.idPerso);
         let personnage = document.createElement('ul');
@@ -98,9 +97,12 @@ export default class DetailPerso{
         sorts.forEach(sort => {
             let elem = document.createElement("li");
             elem.classList.add("spell");
-            sortsExistants.appendChild(elem).textContent = sort.nom;
+            sortsExistants.appendChild(elem).appendChild(document.createElement("span")).textContent = sort.nom;
+            sortsExistants.appendChild(elem).appendChild(document.createElement("span")).textContent = "niveau "+sort.niveau;
+            elem.dataset.niveauRequis = sort.niveau;
         });
         sortsExistants.classList.add("spell-container");
+        sortsExistants.id = "sorts-existants";
 
         // bouton favoris
         let btnFavoris = document.createElement("button");
@@ -214,9 +216,48 @@ export default class DetailPerso{
                     console.log("Objet aléatoire déjà possédé par le personnage :", randomObjet.id, randomObjet.nom);
                 }
             }
+            // vérifier si le personnage a appris un nouveau sort (les sorts dont le niveau est inférieur ou égal au niveau du personnage sont ajoutés à son répertoire)
+            let sorts = await Provider.fetchSorts();
+            console.log(perso.sorts);
+            sorts.forEach(sort => {
+                if (sort.niveau <= perso.niveau && !perso.sorts.some(s => s.id === sort.id)) {
+                    perso.sorts_ids.push(sort.id);
+                    perso.sorts.push(sort);
+                }
+            });
+            await Provider.updatePersonnage(perso);
+            // actualiser l'affichage des sorts
+            let listSort = document.getElementById('sorts');
+            if (perso.sorts.length == 0) {listSort.removeChild(listSort.querySelector(".no-spell"));}
+            listSort.innerHTML = "";
+            perso.sorts.forEach(sort => {
+                let elem = document.createElement("li");
+                elem.classList.add("spell");
+                listSort.appendChild(elem).textContent = sort.nom;
+                console.log(sort.id, sort.nom);
+            });
+            cadenas();
+        }
+        function cadenas() {
+            let sortsExistantsList = document.querySelectorAll('.spell');
+            sortsExistantsList.forEach(sort => {
+                let niveauRequis = parseInt(sort.dataset.niveauRequis);
+                if (perso.niveau < niveauRequis) {
+                    if (!sort.querySelector('.fa-lock')) {
+                        // Créer un élément d'icône de cadenas
+                        let iconeCadenas = document.createElement('i');
+                        iconeCadenas.classList.add('fa', 'fa-lock');
+                        sort.appendChild(iconeCadenas);
+                        console.log("Sort bloqué : ", sort.textContent);
+                    }
+                } else if (sort.querySelector('.fa-lock')) {
+                    sort.removeChild(sort.querySelector('.fa-lock'));
+                    console.log("Sort débloqué : ", sort.textContent);
+                }
+            });
         }
         btnEntrainer.addEventListener("click", async function() {
-            perso.xp += 1000;
+            perso.xp += 100;
             console.log("Expérience du personnage incrémentée de 10 : ", perso.xp);
             // vérifier si des niveaux sont passés
             while (perso.xp/100 >= perso.niveau) {
@@ -290,5 +331,6 @@ export default class DetailPerso{
         imgElements.forEach(img => {
             observer.observe(img);
         });
+        cadenas();
     }
 }
